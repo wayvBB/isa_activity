@@ -46,6 +46,7 @@
     top: 0;
     width: 100%;
     text-align: center;
+    z-index: 1000;
 }
 
 .nav:hover{
@@ -109,13 +110,24 @@ th {
     background-color: #f4f4f4;
 }
 
-
-
 .search-bar {
     border: 2px solid #d470a2;
+    margin-top: none;
     list-style-type: none;
     text-align: center;
-    position: fixed;
-    right: 20px;
-    border-collapse: collapse;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.coursepage-content {
+    position: static;
+}
+
+#courses {
+    margin-top: 130px;
 }
